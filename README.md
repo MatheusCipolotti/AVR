@@ -24,3 +24,17 @@ Repositório dedicado ao armazenamento de projetos utilizando microcontroladores
 | 3    | EESAVE               | Se ativado, preserva a EEPROM após um "chip erase".                                                        |
 | 2..1 | BODLEVEL2, BODLEVEL1 | Configura o Brown-Out Detection (BOD), que impede que o microcontrolador funcione com tensões muito baixas.|
 | 0    | BOOTRST              | Se ativado, o microcontrolador inicia a execução na seção de boot.                                         |
+
+## Configuração dos fuses no gravador
+A Figura 1 mostra o exemplo de configuração dos Fuses para uma aplicação com cristal externo de 16MHz, não utilizando:
+- divisão do clock;
+- JTAG;
+- WDT;
+
+<p align="center">
+<img  src="https://github.com/user-attachments/assets/3a2b44a2-7ffd-4bf6-ba8d-088cec264bd9">
+</p>
+<p align="center">
+  Figura 1 - Configuração base dos FUSES
+</p>
+
